@@ -1,0 +1,190 @@
+[
+
+    {
+        "id": 40,
+        "title": "Breakfast (From 10:00 Till 12:00)",
+        "img": "assets/img/prods/new_menu/empty.png",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 5,
+        "title": "Soup",
+        "img": "assets/img/prods/new_menu/SO-MUSHROOM.JPG",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+ 
+    {
+        "id": 7,
+        "title": "Cold Appetizers & Salads",
+        "img": "assets/img/prods/Cold_Appetizer/Baba ghanoj-18.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+
+    
+    {
+        "id": 8,
+        "title": "Hot Appetizers",
+        "img": "assets/img/prods/hot_appetizer/Cheese roll-20.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+
+
+    
+    {
+        "id": 10,
+        "title": "Pasta",
+        "img": "assets/img/prods/new_menu/BOLOGNAISE.JPG",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 12,
+        "title": "Pizza",
+        "img": "assets/img/prods/pizza/Pepperoni Pizza - 30.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 13,
+        "title": "Manakish & Saj",
+        "img": "assets/img/prods/manakish/Akkawi cheese-15.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 14,
+        "title": "Main Course",
+        "img": "assets/img/prods/new_menu/CORDON BLU.JPG",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 15,
+        "title": "Grill",
+        "img": "assets/img/prods/grills/Mix grills-60.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 16,
+        "title": "Indian / Asian",
+        "img": "assets/img/prods/new_menu/FRIED RICE.JPG",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    
+    {
+        "id": 17,
+        "title": "Burgers & Sandwiches",
+        "img": "assets/img/prods/new_menu/BURGER.JPG",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    
+    {
+        "id": 18,
+        "title": "Bread",
+        "img": "assets/img/prods/bread/Mix bread-20.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+
+    {
+        "id": 19,
+        "title": "Desserts",
+        "img": "assets/img/prods/new_menu/MANGO CAKE.JPG",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 20,
+        "title": "Hot Drink",
+        "img": "assets/img/prods/hot_drinks/cappuccino-15.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 21,
+        "title": "Ice Coffee",
+        "img": "assets/img/prods/icecoffee/ice mocha-20.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 22,
+        "title": "Soft Drink",
+        "img": "assets/img/prods/softdrinks/pepsi-12.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+
+    {
+        "id": 27,
+        "title": "Fresh Juices",
+        "img": "assets/img/prods/calssic coccktail-20.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 28,
+        "title": "Smoothies",
+        "img": "assets/img/prods/smoothies watermellon-18.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 29,
+        "title": "Mocktail ",
+        "img": "assets/img/prods/avocado with banana-20.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 30,
+        "title": "Mix Juices",
+        "img": "assets/img/prods/mix Owl-22.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 31,
+        "title": "Milk Shake",
+        "img": "assets/img/categories/chocolate milk shake-20.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 32,
+        "title": "Shisha - Khalil",
+        "img": "assets/img/categories/khalil manoon.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 33,
+        "title": "Shisha - hawaya",
+        "img": "assets/img/categories/hawaya.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 34,
+        "title": "Shisha - Russian",
+        "img": "assets/img/categories/russian shisha.jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+        "id": 35,
+        "title": "Shisha - Russian 2",
+        "img": "assets/img/categories/russian shisha (2).jpg",
+        "lgimg":"assets/img/categories-lg/1.jpg",
+        "shortdesc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    }
+
+    
+    
+]

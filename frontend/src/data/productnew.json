@@ -1,0 +1,21 @@
+[
+
+    {
+        "id": 1,
+        "img": "assets/img/prods-sm/hummus.png",
+        "name": "Hummus",
+        "shortdesc": "a creamy classic with a twist of lemon salt and rich olive oil",
+        "price": 0.0,
+        "category": [1],
+        "longdescription": "Savor the authentic taste of the Middle East with our classic hummus. Infused with lemon salt, drizzled with the finest olive oil, and perfectly paired with warm pita bread for an irresistible appetizer."
+    },
+    {
+        "id": 2,
+        "img": "assets/img/prods/hummus_beiruti.png",
+        "name": "Hummus Beiruti",
+        "shortdesc": "an aromatic blend of garlic and parsley elevating the traditional hummus",
+        "price": 0.0,
+        "category": [1],
+        "longdescription": "Experience a burst of flavors with our Hummus Beiruti, a delicious twist on traditional hummus. Topped with fresh parsley, a hint of garlic, and a splash of olive oil, it's a perfect start to your culinary journey."
+    }
+]
