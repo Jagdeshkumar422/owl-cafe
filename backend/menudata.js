@@ -1211,7 +1211,7 @@ const defaultProducts = [
     price: 20,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501467/affogato-20_gik8mt.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Americano",
@@ -1220,7 +1220,7 @@ const defaultProducts = [
     price: 17,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501467/americano-17_pdifil.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Anise",
@@ -1229,7 +1229,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501468/anise-15_bct8gd.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Cappuccino",
@@ -1238,7 +1238,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501468/cappuccino-15_ht9p1n.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Coffee Latte",
@@ -1247,7 +1247,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501468/coffee_latte-15_xpo9c1.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Espresso-Double",
@@ -1256,7 +1256,7 @@ const defaultProducts = [
     price: 19,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501474/Espresso_double-19_cdnlty.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Espresso Single",
@@ -1265,7 +1265,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501474/Espresso_double-19_cdnlty.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Ginger Honey Lemon",
@@ -1274,7 +1274,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501478/Ginger_Honey_Lemon-15_xhzclh.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Green Tea",
@@ -1283,7 +1283,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501479/green_tea-15_jjjwut.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Herbs",
@@ -1292,7 +1292,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501480/herbs-15_gmr578.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Hot Chocolate",
@@ -1301,7 +1301,7 @@ const defaultProducts = [
     price: 18,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501483/hot_chocolate-18_pqyyul.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Karak",
@@ -1310,7 +1310,7 @@ const defaultProducts = [
     price: 10,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501484/karak-10_w2zi6n.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Koshari Tea",
@@ -1319,7 +1319,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501487/koshari_tea-15_rcaayf.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Macchiato",
@@ -1328,7 +1328,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501488/macchiato-15_weq9g7.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Mint Tea",
@@ -1337,7 +1337,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501489/mint-15_kfwa2b.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Mochaccino",
@@ -1346,7 +1346,7 @@ const defaultProducts = [
     price: 18,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501488/macchiato-15_weq9g7.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Moroccan Tea (Small)",
@@ -1355,7 +1355,7 @@ const defaultProducts = [
     price: 18,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501495/moroccan_tea_small-18_wdjzyn.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Moroccan Tea (Medium)",
@@ -1364,7 +1364,7 @@ const defaultProducts = [
     price: 25,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501493/moroccan_tea_medium-25_bizyqs.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Nescafe Black",
@@ -1373,7 +1373,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501497/nescafe_black-15_u4csku.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Nescafe with Milk",
@@ -1382,7 +1382,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501500/nescafe_with_milk-15_b08zhm.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Red Tea",
@@ -1391,7 +1391,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501501/red_tea-15_pcjpcp.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Sahlab",
@@ -1400,7 +1400,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501502/sahlab-15_sqm78a.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Spanish Latte",
@@ -1409,7 +1409,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501468/coffee_latte-15_xpo9c1.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Turkish Coffee Double",
@@ -1418,7 +1418,7 @@ const defaultProducts = [
     price: 19,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501507/turkish_coffee_double-19_vxos3i.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Turkish Coffee Single",
@@ -1427,7 +1427,7 @@ const defaultProducts = [
     price: 15,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501507/turkish_coffee_double-19_vxos3i.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "White Coffee",
@@ -1436,7 +1436,7 @@ const defaultProducts = [
     price: 10,
     rating: 0,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736501509/white_coffee-10_zhpcth.jpg",
-    categoryTitles: ["Hot Drinks"]
+    categoryTitles: ["Hot Drink"]
   },
   {
     name: "Chocolate Frappuccino",
@@ -1445,7 +1445,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503593/chocolate_frappuccino-20_qdubfw.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Cookies Frappuccino",
@@ -1454,7 +1454,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503593/chocolate_frappuccino-20_qdubfw.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Hazelnut Frappuccino",
@@ -1463,7 +1463,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503593/caramel_frappuccino-20_htaui3.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Ice Caramel",
@@ -1472,7 +1472,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503597/ice_caramel-20_g4tk3i.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Ice Coffee",
@@ -1481,7 +1481,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503600/ice_coffe-20_wfqbns.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Ice Mocha",
@@ -1490,7 +1490,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503597/ice_caramel-20_g4tk3i.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Ice Spanish Latte",
@@ -1499,7 +1499,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503604/ice_spanish_latte_-20_yj4k8x.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Ice Tea",
@@ -1508,7 +1508,7 @@ const defaultProducts = [
     price: 12,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503606/ice_tea-12_k9ke6n.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Ice with Mocha",
@@ -1517,7 +1517,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503607/ice_with_mocha-20_i3ysgk.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Caramel Frappuccino",
@@ -1526,7 +1526,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503593/caramel_frappuccino-20_htaui3.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Mocha Frappuccino",
@@ -1535,7 +1535,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503607/mocha_frappuccino-20_czfvip.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "Snickers Frappuccino",
@@ -1544,7 +1544,7 @@ const defaultProducts = [
     price: 20,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736503609/snickers_frappuccino-20_v6iq12.jpg",
-    categoryTitles: ["Iced Coffee"]
+    categoryTitles: ["Ice Coffee"]
   },
   {
     name: "7up Diet",
@@ -1795,7 +1795,7 @@ const defaultProducts = [
     longdescription: "",
     price: 20.0,
     rating: 4,
-    img: "ahttps://res.cloudinary.com/dcwc3ehp3/image/upload/v1736513252/lotus_milk_shake-20_ibys0y.jpg",
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736513252/lotus_milk_shake-20_ibys0y.jpg",
     categoryTitles: ["Milk Shake"]
   },
   {
@@ -2039,7 +2039,7 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
   },
   {
     name: "Lave 66",
@@ -2048,7 +2048,7 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
   },
   {
     name: "Marbella",
@@ -2057,7 +2057,7 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
   },
   {
     name: "Cola",
@@ -2066,7 +2066,7 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
   },
   {
     name: "Istanbul Night",
@@ -2075,7 +2075,7 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
   },
   {
     name: "Commissioner",
@@ -2084,7 +2084,7 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
   },
   {
     name: "Lady Curl",
@@ -2093,7 +2093,182 @@ const defaultProducts = [
     price: 96,
     rating: 4,
     img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1736514292/russian_shisha_wf8dxw.jpg",
-    categoryTitles: ["Shisha - hawaya"]
+    categoryTitles: ["Shisha - Russian"]
+  },
+  {
+    name: "Apple",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463813/Apple-15_taconu.jpg",
+    categoryTitles: ["Fresh Juices"]
+  }
+  ,
+  {
+    name: "Avocado",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463813/Avocado-20_k0klqi.jpg",
+    categoryTitles: ["Fresh Juices"]
+  }
+  ,
+  {
+    name: "calssic coccktail",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463814/calssic_coccktail-20_hdoyun.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "Carrot",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463814/Carrot-15_c4t0be.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "Kiwi",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463813/Kiwi-15_rdcfdq.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "lemon mint",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463814/lemon_mint-15_ddslj5.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },{
+    name: "Mango",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463813/Mango-15_ingth9.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "Orange",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463814/Orange-15_g00eh6.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "Pineapple",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463814/Pineapple-15_fujr5y.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "Pomegranate",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463814/Pomegranate_20_mttkbo.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "strawberries",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463815/strawberries-20_bdys3q.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "Melon",
+    shortdesc: "",
+    longdescription: "",
+    price: 15.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737463813/melon-15_y2sl7k.jpg",
+    categoryTitles: ["Fresh Juices"]
+  },
+  {
+    name: "avocado with banana",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464200/avocado_with_banana-20_cdgm5r.jpg",
+    categoryTitles: ["Mocktail"]
+  },
+  {
+    name: "banana with milk",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464198/banana_with_milk-20_ckrehd.jpg",
+    categoryTitles: ["Mocktail"]
+  }
+  ,
+  {
+    name: "beetroot orange with ginger",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464199/beetroot_orange_with_ginger-20_dsw6dr.jpg",
+    categoryTitles: ["Mocktail"]
+  }
+  ,
+  {
+    name: "jamaica coctail",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464199/jamaica_coctail-20_gyqiya.jpg",
+    categoryTitles: ["Mocktail"]
+  }
+  ,
+  {
+    name: "orange with carrot",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464200/orange_ccarot-20_zkkkct.jpg",
+    categoryTitles: ["Mocktail"]
+  },
+  {
+    name: "pomegranate with orange",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464200/pomegranate_with_orange-20_vfuxyg.jpg",
+    categoryTitles: ["Mocktail"]
+  },
+  {
+    name: "strawberry with lemon",
+    shortdesc: "",
+    longdescription: "",
+    price: 20.0,
+    rating: 4,
+    img: "https://res.cloudinary.com/dcwc3ehp3/image/upload/v1737464200/strawberry_with_lemon-20_l4prte.jpg",
+    categoryTitles: ["Mocktail"]
   }
   
   

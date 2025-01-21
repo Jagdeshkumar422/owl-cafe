@@ -23,7 +23,7 @@ app.use('/api', require("./routes/categoryRoute"));
 app.use('/api', require("./routes/menuRoute"));
 
 // Connect to MongoDB (replace with your own URI)
-mongoose.connect('mongodb://127.0.0.1:27017/resturant', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
    
