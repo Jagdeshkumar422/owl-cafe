@@ -5,6 +5,7 @@ import { Modal } from "react-bootstrap";
 import Quickview from "../../layouts/Quickview";
 import Masonry from "react-masonry-component";
 import axios from "axios";
+import { APP_CONFIG } from "../../../config";
 
 class Content extends Component {
   constructor(props) {
@@ -24,14 +25,14 @@ class Content extends Component {
   componentDidMount() {
     // Fetch categories and products from backend
     axios
-      .get("http://localhost:5002/api/categories") // Replace with your API endpoint for categories
+      .get(`${APP_CONFIG.backendUrl}api/categories`) // Replace with your API endpoint for categories
       .then((res) => {
         this.setState({ productcategory: res.data });
       })
       .catch((err) => console.error("Error fetching categories:", err));
 
     axios
-      .get("http://localhost:5002/api/menus") // Replace with your API endpoint for products
+      .get(`${APP_CONFIG.backendUrl}api/menus`) // Replace with your API endpoint for products
       .then((res) => {
         const products = res.data;
         products.sort((a, b) => {

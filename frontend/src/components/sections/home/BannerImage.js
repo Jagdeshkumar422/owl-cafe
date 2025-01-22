@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 //import { Link } from "react-router-dom";
 import axios from "axios";
+import { APP_CONFIG } from "../../../config";
 
 class BannerImage extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class BannerImage extends Component {
 
     fetchBannerImage = async () => {
         try {
-            const response = await axios.get("http://localhost:5002/api/banner"); // Replace with your backend URL
+            const response = await axios.get(`${APP_CONFIG.backendUrl}api/banner`); // Replace with your backend URL
             this.setState({ bannerUrl: response.data.imgUrl }); // Set the banner URL from backend response
         } catch (err) {
             console.error("Error fetching banner:", err);

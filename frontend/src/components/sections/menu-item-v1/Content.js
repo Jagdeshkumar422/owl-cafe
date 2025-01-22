@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Tab, Nav } from "react-bootstrap";
+import { APP_CONFIG } from '../../../config';
 
 class Content extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Content extends Component {
   // Function to fetch product data from the API
   fetchProductData = async (productId) => {
     try {
-      const response = await fetch(`http://localhost:5002/api/menu/${productId}`);
+      const response = await fetch(`${APP_CONFIG.backendUrl}api/menu/${productId}`);
       if (!response.ok) {
         throw new Error('Product not found');
       }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import AdminLayout from '../AdminLayout/AdminLayout';
 import { Redirect } from "react-router-dom";
+import { APP_CONFIG } from '../../../config';
 
 const AddBanner = () => {
   const [bannerUrl, setBannerUrl] = useState('');
@@ -20,7 +21,7 @@ const AddBanner = () => {
     }
     const fetchBanner = async () => {
       try {
-        const response = await axios.get('http://localhost:5002/api/banner');
+        const response = await axios.get(`${APP_CONFIG.backendUrl}api/banner`);
         setBannerUrl(response.data.imgUrl); // Ensure the response contains `imgUrl`
       } catch (err) {
         console.error('Error fetching banner:', err);
@@ -46,7 +47,7 @@ const AddBanner = () => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:5002/api/banner', formData, {
+      const response = await axios.post(`${APP_CONFIG.backendUrl}api/banner`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

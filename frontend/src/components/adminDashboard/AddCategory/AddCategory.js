@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./addcategory.css"; // Add some styles for the layout and modal
 import AdminLayout from "../AdminLayout/AdminLayout";
+import { APP_CONFIG } from "../../../config";
 
 const AddCategory = () => {
   const [categories, setCategories] = useState([]); // State for categories
@@ -19,7 +20,7 @@ const AddCategory = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get("http://localhost:5002/api/categories");
+      const response = await axios.get(`${APP_CONFIG.backendUrl}api/categories`);
       const data = Array.isArray(response.data) ? response.data : []; // Ensure response is an array
       setCategories(data);
     } catch (error) {
@@ -48,7 +49,7 @@ const AddCategory = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5002/api/categories",
+        `${APP_CONFIG.backendUrl}api/categories`,
         formData
       );
       if (response.status === 201 || response.status === 200) {
@@ -73,7 +74,7 @@ const AddCategory = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:5002/api/categories/${id}`
+        `${APP_CONFIG.backendUrl}api/categories/${id}`
       );
       if (response.status === 200) {
         fetchCategories(); // Refresh categories after deletion

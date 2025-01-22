@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import AdminLayout from '../AdminLayout/AdminLayout';
 import './addmenu.css'; // Import the CSS file
+import { APP_CONFIG } from '../../../config';
 
 const AddMenu = () => {
   const [menus, setMenus] = useState([]);
@@ -28,7 +29,7 @@ const AddMenu = () => {
 
   const fetchMenus = async () => {
     try {
-      const response = await axios.get('http://localhost:5002/api/menus');
+      const response = await axios.get(`${APP_CONFIG.backendUrl}api/menus`);
       setMenus(response.data);
     } catch (error) {
       console.error('Error fetching menus:', error);
@@ -37,7 +38,7 @@ const AddMenu = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('http://localhost:5002/api/categories');
+      const response = await axios.get(`${APP_CONFIG.backendUrl}api/categories`);
       setCategories(response.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -70,7 +71,7 @@ const AddMenu = () => {
     formData.append('img', image);
 
     try {
-      const response = await axios.post('http://localhost:5002/api/addmenu', formData);
+      const response = await axios.post(`${APP_CONFIG.backendUrl}api/addmenu`, formData);
       alert(response.data.message);
       setIsAddFormVisible(false); // Close the form after successful submission
       fetchMenus(); // Reload menus after adding a new one
@@ -83,7 +84,7 @@ const AddMenu = () => {
     console.log(menuId)
     if (window.confirm('Are you sure you want to delete this menu item?')) {
       try {
-        await axios.delete(`http://localhost:5002/api/deletemenu/${menuId}`);
+        await axios.delete(`${APP_CONFIG.backendUrl}api/deletemenu/${menuId}`);
         alert('Menu item deleted successfully');
         setMenus(menus.filter((menu) => menu.id !== menuId)); // Remove from state
       } catch (error) {
