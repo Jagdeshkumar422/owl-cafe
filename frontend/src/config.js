@@ -1,4 +1,3 @@
 export const APP_CONFIG = {
-    backendUrl: "http://localhost:5002/"
-    // backendUrl: "https://backend.aim-estate.com/"
+    backendUrl: "https://owl-cafe-w28n.vercel.app/"
 }
