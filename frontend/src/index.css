@@ -1,8 +1,16 @@
+*{
+  font-family: "Poppins", serif !important;
+}
+
 .slick-slider .slick-track, .slick-slider .slick-list{
   display: flex;
 }
 .slick-dots{
   width:auto;
+}
+
+label{
+  color: #2c3e50;
 }
 .slick-dots li button:before{
   display: none;
@@ -89,7 +97,7 @@
   clip:unset;
 }
 .close.close-dark span {
-  background-color: #1D2228;
+  background-color: #fff;
 }
 .close.close-danger span {
   background-color: red;
@@ -114,7 +122,7 @@
 }
 
 .close.dark span {
-  background-color: #1D2228;
+  background-color: #fff;
 }
 .modal-header .close{
   margin: 0;
@@ -180,7 +188,7 @@
   font-weight: 600;
   margin-right: 10px;
   border-radius: 8px;
-  color: #1D2228;
+  color: #fff;
 }
 .nav-tabs .nav-link.active {
   background-color: #ED4E53;
@@ -207,13 +215,13 @@
   display: flex;
   width: 100%;
   font-weight: 700;
-  color: #1D2228;
+  color: #fff;
   border-radius: 0;
   margin-right: 0;
 }
 .accordion .card .collapseparent.show+.card-header{
 background-color: #f8f9fa;
-color: #1D2228;
+color: #fff;
 }
 .accordion .card .collapseparent.show+.card-header:before{
 -webkit-transform: rotate(0);
@@ -223,7 +231,7 @@ opacity: 0;
 }
 .accordion .card .collapseparent.show+.card-header:before,
 .accordion .card .collapseparent.show+.card-header:after{
-background-color: #1D2228;
+background-color: #fff;
 }
 .accordion .card .collapseparent.show+.card-header .nav-link i{
 color: #ED4E53;

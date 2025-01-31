@@ -77,7 +77,7 @@ class BannerImage extends Component {
                             className="banner-logo1" // Apply the CSS class here
 
                            style={{
-                                height: '400px', // 80% of the parent div's height
+                                height: '500px', // 80% of the parent div's height
                                 width: '100%' // Width will adjust based on the image's aspect ratio
                             }}
                         />

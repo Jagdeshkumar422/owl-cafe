@@ -3,6 +3,7 @@ import axios from 'axios';
 import AdminLayout from '../AdminLayout/AdminLayout';
 import { Redirect } from "react-router-dom";
 import { APP_CONFIG } from '../../../config';
+import "./addbanner.css"
 
 const AddBanner = () => {
   const [bannerUrl, setBannerUrl] = useState('');
@@ -66,24 +67,16 @@ const AddBanner = () => {
   return (
     <AdminLayout>
       <div style={{ position: 'relative' }}>
-        <h1>Banner Management</h1>
+      <div className="header">
+          <h2>Manage Banner</h2>
+          <button
+            className="add-btn"
+            onClick={() => setIsModalOpen(true)}
+          >
+            Update Banner
+          </button>
+        </div>
         {bannerUrl && <img src={bannerUrl} alt="Banner" width="100%" style={{ marginBottom: '20px' }} />}
-        <button
-          style={{
-            position: 'absolute',
-            top: '20px',
-            right: '20px',
-            padding: '10px 20px',
-            backgroundColor: '#007bff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-          }}
-          onClick={() => setIsModalOpen(true)}
-        >
-          Update Banner
-        </button>
 
         {isModalOpen && (
           <div
@@ -108,11 +101,12 @@ const AddBanner = () => {
                 position: 'relative',
               }}
             >
-              <h2>Upload New Banner</h2>
+              <h2 style={{color: "#2c3e50", fontSize: "20px"}}>Upload New Banner</h2>
               {error && <p style={{ color: 'red' }}>{error}</p>}
               {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
               <form onSubmit={handleSubmit}>
-                <input type="file" name="file" onChange={handleFileChange} />
+                <p style={{color: "#2c3e50"}}>Image must be 1200 x 500 px</p>
+                <input type="file" name="file" onChange={handleFileChange}  style={{color: "#2c3e50"}}/>
                 <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'space-between' }}>
                   <button type="button" onClick={() => setIsModalOpen(false)} style={{ padding: '10px', cursor: 'pointer' }}>
                     Cancel

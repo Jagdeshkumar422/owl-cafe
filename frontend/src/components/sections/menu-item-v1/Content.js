@@ -54,8 +54,8 @@ class Content extends Component {
     return (
       <Fragment>
         <div style={{
-          backgroundColor: "#333333",
-          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/banner/background_with_layer_2.png)`,
+          backgroundColor: "#000",
+          // backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/banner/background_with_layer_2.png)`,
           justifyContent: "flex-start",
           alignItems: "center",
         }}>
@@ -64,8 +64,8 @@ class Content extends Component {
               <div className="row" style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
                 <div className="col-sm-8" style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
                   {/* Main Thumb */}
-                  <div className="product-thumb1" style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-                    <img src={product.img} alt={product.name} />
+                  <div className="product-thumb1" style={{ flex: 1, justifyContent: "center", alignItems: "center", width: "100%" }}>
+                    <img src={product.img} alt={product.name} style={{width: "100%"}} />
                   </div>
                   {/* /Main Thumb */}
                 </div>

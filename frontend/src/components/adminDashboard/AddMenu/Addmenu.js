@@ -16,12 +16,15 @@ const AddMenu = () => {
   });
   const [image, setImage] = useState(null);
   const [isAddFormVisible, setIsAddFormVisible] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
+  const [currentProductId, setCurrentProductId] = useState(null);
+  const [isLoading, setIsLoading] = useState(false); // Loading state
   const isAuthenticated = localStorage.getItem("isAuthenticated");
 
   // Fetch all menu items and categories from the backend
   useEffect(() => {
     if (!isAuthenticated) {
-      window.location.href ="/login"; // Redirect to login if not authenticated
+      window.location.href = "/login"; // Redirect to login if not authenticated
     }
     fetchMenus();
     fetchCategories();
@@ -62,6 +65,8 @@ const AddMenu = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setIsLoading(true); // Start loading when the form is submitted
+
     const formData = new FormData();
     formData.append('name', newProduct.name);
     formData.append('shortdesc', newProduct.shortdesc);
@@ -71,62 +76,109 @@ const AddMenu = () => {
     formData.append('img', image);
 
     try {
-      const response = await axios.post(`${APP_CONFIG.backendUrl}api/addmenu`, formData);
-      alert(response.data.message);
+      let response;
+      if (isEditing) {
+        // Update menu item
+        response = await axios.put(`${APP_CONFIG.backendUrl}api/menus/${currentProductId}`, formData);
+        alert('Menu item updated successfully');
+      } else {
+        // Add new menu item
+        response = await axios.post(`${APP_CONFIG.backendUrl}api/addmenu`, formData);
+        alert(response.data.message);
+      }
+      
       setIsAddFormVisible(false); // Close the form after successful submission
-      fetchMenus(); // Reload menus after adding a new one
+      fetchMenus(); // Reload menus after adding or updating
+      setIsEditing(false); // Reset editing state
+      setCurrentProductId(null); // Clear the product ID
     } catch (error) {
-      console.error('Error adding menu:', error);
+      console.error('Error submitting menu:', error);
+    } finally {
+      setIsLoading(false); // Stop loading after submission is complete
     }
   };
 
+  const handleEdit = (menuId) => {
+    const menuToEdit = menus.find((menu) => menu._id === menuId);
+    setNewProduct({
+      name: menuToEdit.name,
+      shortdesc: menuToEdit.shortdesc,
+      longdescription: menuToEdit.longdescription,
+      price: menuToEdit.price,
+      category: menuToEdit.category.map((cat) => cat._id),
+    });
+    setImage(menuToEdit.img); // Pre-fill image field (optional, if image is being uploaded)
+    setIsEditing(true); // Set editing mode
+    setCurrentProductId(menuId); // Set the current product ID
+    setIsAddFormVisible(true); // Show the form
+  };
+
   const handleDelete = async (menuId) => {
-    console.log(menuId)
     if (window.confirm('Are you sure you want to delete this menu item?')) {
       try {
         await axios.delete(`${APP_CONFIG.backendUrl}api/deletemenu/${menuId}`);
         alert('Menu item deleted successfully');
-        setMenus(menus.filter((menu) => menu.id !== menuId)); // Remove from state
+        setMenus(menus.filter((menu) => menu._id !== menuId)); // Remove from state
       } catch (error) {
         console.error('Error deleting menu:', error);
       }
     }
   };
 
+  const handleAddMenu = () => {
+    // Reset form when opening the "Add Menu" form
+    setNewProduct({
+      name: '',
+      shortdesc: '',
+      longdescription: '',
+      price: '',
+      category: [],
+    });
+    setImage(null); // Clear image
+    setIsEditing(false); // Ensure we're not in editing mode
+    setIsAddFormVisible(true); // Show the form
+  };
+
   return (
     <AdminLayout>
       <div className="header">
         <h2>Menu List</h2>
-        <button className="addButton" onClick={() => setIsAddFormVisible(true)}>
-          Add
+        <button className="addButton" onClick={handleAddMenu}>
+          {isEditing ? 'Edit Menu' : 'Add Menu'}
         </button>
       </div>
 
       {/* Displaying the list of existing menu items */}
       <div className="menuList">
         {menus.map((menu) => (
-          <div key={menu.id} className="menuItem">
+          <div key={menu._id} className="menuItem">
             <img src={menu.img} alt={menu.name} className="menuImage" />
             <div className="menuDetails">
               <h3 className="menuDetailsHeading">{menu.name}</h3>
               <p className="menuDetailsText">{menu.shortdesc}</p>
-              <p className="menuDetailsText">Price: ${menu.price}</p>
+              <p className="menuDetailsText">Price: AED {menu.price}</p>
               <p className="menuDetailsText">Rating: {menu.rating}</p>
             </div>
             <button
-    className="deleteButton"
-    onClick={() => handleDelete(menu._id)}
-  >
-    <i className="deleteIcon">×</i> {/* Using × for the icon */}
-  </button>
+              className="deleteButton"
+              onClick={() => handleDelete(menu._id)}
+            >
+              <i className="bx bx-trash"></i>
+            </button>
+            <button
+              className="editButton"
+              onClick={() => handleEdit(menu._id)}
+            >
+              <i className="bx bx-edit-alt"></i>
+            </button>
           </div>
         ))}
       </div>
 
-      {/* Add Menu Form */}
+      {/* Add or Edit Menu Form */}
       {isAddFormVisible && (
         <div className="formContainer">
-          <h3 className="formHeading">Add New Menu</h3>
+          <h3 style={{color: "#2c3e50"}} className="formHeading">{isEditing ? 'Edit Menu' : 'Add New Menu'}</h3>
           <form onSubmit={handleSubmit}>
             <div>
               <label>Name</label>
@@ -190,11 +242,10 @@ const AddMenu = () => {
                 type="file"
                 accept="image/*"
                 onChange={handleImageChange}
-                required
               />
             </div>
-            <button className="submitButton" type="submit">
-              Add Product
+            <button className="submitButton" type="submit" disabled={isLoading}>
+              {isLoading ? 'Loading...' : isEditing ? 'Update Product' : 'Add Product'}
             </button>
             <button
               type="button"

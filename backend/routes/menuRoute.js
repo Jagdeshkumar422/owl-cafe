@@ -21,8 +21,6 @@ router.get('/menus', async (req, res) => {
   }
 });
 
-
-
 // Add a new menu item
 router.post('/addmenu', upload.single('img'), async (req, res) => {
   const { name, shortdesc, longdescription, price, category } = req.body;
@@ -97,9 +95,9 @@ router.delete('/deletemenu/:id', async (req, res) => {
   }
 });
 
-
+// Fetch a specific menu item by ID
 router.get('/menu/:id', async (req, res) => {
-  const { id } = req.params; // Get the product ID from the request parameters
+  const { id } = req.params;
 
   try {
     // Find the product by ID and populate the category field
@@ -117,6 +115,60 @@ router.get('/menu/:id', async (req, res) => {
   }
 });
 
+// Update a menu item by ID
+router.put('/menus/:id', upload.single('img'), async (req, res) => {
+  const { id } = req.params;
+  const { name, shortdesc, longdescription, price, category } = req.body;
+  const file = req.file;
 
+  try {
+    // Find the product by ID
+    const product = await Product.findById(id);
+
+    if (!product) {
+      return res.status(404).json({ message: 'Product not found' });
+    }
+
+    // If a new image is uploaded, upload it to Cloudinary
+    let updatedImage = product.img; // Keep the old image URL by default
+    if (file) {
+      // Delete the old image from Cloudinary if a new one is uploaded
+      if (product.img) {
+        const publicId = product.img.split('/').pop().split('.')[0]; // Extract the public ID
+        await cloudinary.uploader.destroy(publicId);
+      }
+
+      // Upload the new image
+      const uploadResult = await cloudinary.uploader.upload_stream(
+        { folder: 'menu-items' },
+        (error, result) => {
+          if (error) {
+            console.error('Error uploading image:', error);
+            return res.status(500).json({ message: 'Error uploading image' });
+          }
+
+          updatedImage = result.secure_url; // Update the image URL with the new image
+        }
+      );
+      uploadResult.end(file.buffer);
+    }
+
+    // Update product fields
+    product.name = name;
+    product.shortdesc = shortdesc;
+    product.longdescription = longdescription;
+    product.price = price;
+    product.category = JSON.parse(category); // Update category (it could be an array)
+    product.img = updatedImage; // Update the image URL
+
+    // Save the updated product to the database
+    await product.save();
+
+    res.status(200).json({ message: 'Product updated successfully', product });
+  } catch (error) {
+    console.error('Error updating product:', error);
+    res.status(500).json({ message: 'Error updating product', error });
+  }
+});
 
 module.exports = router;

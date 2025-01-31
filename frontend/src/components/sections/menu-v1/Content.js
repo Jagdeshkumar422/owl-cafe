@@ -130,10 +130,11 @@ class Content extends Component {
         <div
           className="ct-menu-categories menu-filter"
           style={{
-            backgroundImage:
-              "url(" +
-              process.env.PUBLIC_URL +
-              "/assets/img/banner/background_with_layer_2.png)",
+            backgroundColor: "#000"
+            // backgroundImage:
+            //   "url(" +
+            //   process.env.PUBLIC_URL +
+            //   "/assets/img/banner/background_with_layer_2.png)",
           }}
         >
           <Link to="/" className="btn-custom primary" style={{ margin: "2%" }}>
@@ -189,12 +190,12 @@ class Content extends Component {
         <div
           className="section section-padding"
           style={{
-            backgroundColor: "#333",
+            backgroundColor: "#000",
             padding: 10,
-            backgroundImage:
-              "url(" +
-              process.env.PUBLIC_URL +
-              "/assets/img/banner/background_with_layer_2.png)",
+            // backgroundImage:
+            //   "url(" +
+            //   process.env.PUBLIC_URL +
+            //   "/assets/img/banner/background_with_layer_2.png)",
           }}
         >
           <div className="container">

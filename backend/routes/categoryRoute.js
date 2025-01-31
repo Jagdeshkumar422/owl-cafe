@@ -25,9 +25,8 @@ router.get('/categories', async (req, res) => {
   try {
     const categories = await Category.find();
     if (!categories) {
-        // Provide a default response instead of a 404
-        return res.json("not data found");
-      }
+      return res.json("not data found");
+    }
     res.json(categories);
   } catch (error) {
     res.status(500).json({ message: 'Error fetching categories', error });
@@ -36,7 +35,7 @@ router.get('/categories', async (req, res) => {
 
 // Add a new category
 router.post('/categories', upload.single('img'), async (req, res) => {
-  const { title, shortdesc } = req.body; // Extract fields from the request body
+  const { title, shortdesc } = req.body;
   const file = req.file;
 
   if (!file) {
@@ -44,7 +43,7 @@ router.post('/categories', upload.single('img'), async (req, res) => {
   }
 
   try {
-    const streamUpload = (fileBuffer) =>
+    const streamUpload = (fileBuffer) => 
       new Promise((resolve, reject) => {
         const stream = cloudinary.uploader.upload_stream(
           { folder: 'categories' },
@@ -71,6 +70,53 @@ router.post('/categories', upload.single('img'), async (req, res) => {
   } catch (error) {
     console.error('Error in /categories route:', error);
     res.status(500).json({ message: 'Error adding category', error });
+  }
+});
+
+// Update a category
+router.put('/categories/:id', upload.single('img'), async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, shortdesc } = req.body;
+    const file = req.file;
+
+    // Find the category to update
+    const category = await Category.findById(id);
+    if (!category) {
+      return res.status(404).json({ message: 'Category not found' });
+    }
+
+    let imageUrl = category.img; // Keep the current image URL if no new image is uploaded
+
+    if (file) {
+      const streamUpload = (fileBuffer) =>
+        new Promise((resolve, reject) => {
+          const stream = cloudinary.uploader.upload_stream(
+            { folder: 'categories' },
+            (error, result) => {
+              if (error) reject(error);
+              else resolve(result);
+            }
+          );
+          stream.end(fileBuffer);
+        });
+
+      // Upload the new image if there is one
+      const uploadResult = await streamUpload(file.buffer);
+      imageUrl = uploadResult.secure_url; // Update the image URL with the new image
+    }
+
+    // Update the category in the database
+    category.title = title;
+    category.shortdesc = shortdesc;
+    category.img = imageUrl;
+
+    await category.save();
+
+    res.status(200).json({ message: 'Category updated successfully', category });
+  } catch (error) {
+    console.error('Error in /categories/:id route:', error);
+    res.status(500).json({ message: 'Error updating category', error });
   }
 });
 
