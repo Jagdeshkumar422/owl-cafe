@@ -124,7 +124,6 @@ router.put('/menus/:id', upload.single('img'), async (req, res) => {
   try {
     // Find the product by ID
     const product = await Product.findById(id);
-
     if (!product) {
       return res.status(404).json({ message: 'Product not found' });
     }
@@ -135,22 +134,24 @@ router.put('/menus/:id', upload.single('img'), async (req, res) => {
       // Delete the old image from Cloudinary if a new one is uploaded
       if (product.img) {
         const publicId = product.img.split('/').pop().split('.')[0]; // Extract the public ID
-        await cloudinary.uploader.destroy(publicId);
+        await cloudinary.uploader.destroy(publicId); // Delete the old image from Cloudinary
       }
 
-      // Upload the new image
-      const uploadResult = await cloudinary.uploader.upload_stream(
-        { folder: 'menu-items' },
-        (error, result) => {
-          if (error) {
-            console.error('Error uploading image:', error);
-            return res.status(500).json({ message: 'Error uploading image' });
+      // Upload the new image to Cloudinary and await the result
+      const uploadResult = await new Promise((resolve, reject) => {
+        cloudinary.uploader.upload_stream(
+          { folder: 'menu-items' },
+          (error, result) => {
+            if (error) {
+              reject(new Error('Error uploading image'));
+            } else {
+              resolve(result.secure_url); // Get the URL of the uploaded image
+            }
           }
+        ).end(file.buffer); // Send the file buffer to Cloudinary
+      });
 
-          updatedImage = result.secure_url; // Update the image URL with the new image
-        }
-      );
-      uploadResult.end(file.buffer);
+      updatedImage = uploadResult; // Set the new image URL
     }
 
     // Update product fields
@@ -170,5 +171,6 @@ router.put('/menus/:id', upload.single('img'), async (req, res) => {
     res.status(500).json({ message: 'Error updating product', error });
   }
 });
+
 
 module.exports = router;

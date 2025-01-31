@@ -13,6 +13,7 @@ const AddMenu = () => {
     longdescription: '',
     price: '',
     category: [],
+    img: '', // Add img to the newProduct state
   });
   const [image, setImage] = useState(null);
   const [isAddFormVisible, setIsAddFormVisible] = useState(false);
@@ -54,7 +55,8 @@ const AddMenu = () => {
   };
 
   const handleImageChange = (e) => {
-    setImage(e.target.files[0]);
+    console.log(e.target.files[0])
+    setImage(e.target.files[0]); // Update image state when user selects a new image
   };
 
   const handleCategoryChange = (e) => {
@@ -73,20 +75,26 @@ const AddMenu = () => {
     formData.append('longdescription', newProduct.longdescription);
     formData.append('price', newProduct.price);
     formData.append('category', JSON.stringify(newProduct.category));
-    formData.append('img', image);
+
+    // Only append the new image if it's selected
+    if (image) {
+      formData.append('img', image);
+    } else if (newProduct.img) {
+      formData.append('img', newProduct.img); // Ensure that the existing image URL is sent if no new image is provided
+    }
 
     try {
       let response;
       if (isEditing) {
-        // Update menu item
+        // Update menu item with the new data
         response = await axios.put(`${APP_CONFIG.backendUrl}api/menus/${currentProductId}`, formData);
         alert('Menu item updated successfully');
       } else {
-        // Add new menu item
+        // Add a new menu item
         response = await axios.post(`${APP_CONFIG.backendUrl}api/addmenu`, formData);
         alert(response.data.message);
       }
-      
+
       setIsAddFormVisible(false); // Close the form after successful submission
       fetchMenus(); // Reload menus after adding or updating
       setIsEditing(false); // Reset editing state
@@ -106,8 +114,9 @@ const AddMenu = () => {
       longdescription: menuToEdit.longdescription,
       price: menuToEdit.price,
       category: menuToEdit.category.map((cat) => cat._id),
+      img: menuToEdit.img, // Set the existing image URL
     });
-    setImage(menuToEdit.img); // Pre-fill image field (optional, if image is being uploaded)
+    setImage(null); // Reset image input since the image URL is pre-filled
     setIsEditing(true); // Set editing mode
     setCurrentProductId(menuId); // Set the current product ID
     setIsAddFormVisible(true); // Show the form
@@ -133,6 +142,7 @@ const AddMenu = () => {
       longdescription: '',
       price: '',
       category: [],
+      img: '', // Reset the image
     });
     setImage(null); // Clear image
     setIsEditing(false); // Ensure we're not in editing mode
@@ -178,7 +188,7 @@ const AddMenu = () => {
       {/* Add or Edit Menu Form */}
       {isAddFormVisible && (
         <div className="formContainer">
-          <h3 style={{color: "#2c3e50"}} className="formHeading">{isEditing ? 'Edit Menu' : 'Add New Menu'}</h3>
+          <h3 className="formHeading">{isEditing ? 'Edit Menu' : 'Add New Menu'}</h3>
           <form onSubmit={handleSubmit}>
             <div>
               <label>Name</label>
@@ -243,6 +253,15 @@ const AddMenu = () => {
                 accept="image/*"
                 onChange={handleImageChange}
               />
+              {isEditing && newProduct.img && (
+                <div>
+                  <img
+                    src={newProduct.img}
+                    alt="Current image"
+                    style={{ width: '150px', marginTop: '10px' }}
+                  />
+                </div>
+              )}
             </div>
             <button className="submitButton" type="submit" disabled={isLoading}>
               {isLoading ? 'Loading...' : isEditing ? 'Update Product' : 'Add Product'}
