@@ -6,8 +6,8 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
   service: "gmail", // You can use another email service here
   auth: {
-    user: "jk9876211@gmail.com", // Replace with your email (sender)
-    pass: "bibj txqq ljzi uvzz", // Replace with your app password
+    user: "muazraja@gmail.com", // Replace with your email (sender)
+    pass: "eylj ekku bupa ttfp", // Replace with your app password
   },
 });
 
@@ -18,7 +18,7 @@ router.post("/booking", async (req, res) => {
   // Email content for booking notification
   const mailOptions = {
     from: email, // The user's email is set as the "from" field
-    to: "jk9876211@gmail.com", // All bookings will be sent to this email address
+    to: "muazraja@gmail.com", // All bookings will be sent to this email address
     subject: "New Booking Request", // Email subject
     text: `
       You have received a new booking request:

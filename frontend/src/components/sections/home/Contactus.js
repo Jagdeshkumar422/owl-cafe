@@ -46,6 +46,8 @@ const Contactus = () => {
           <input
             type="text"
             name="name"
+            style={{color:"#333"
+            }}
             value={formData.name}
             onChange={handleChange}
             required
@@ -56,6 +58,8 @@ const Contactus = () => {
           <input
             type="email"
             name="email"
+            style={{color:"#333"
+            }}
             value={formData.email}
             onChange={handleChange}
             required
@@ -66,6 +70,8 @@ const Contactus = () => {
           <input
             type="text"
             name="number"
+            style={{color:"#333"
+            }}
             value={formData.number}
             onChange={handleChange}
             required
@@ -88,6 +94,8 @@ const Contactus = () => {
           <input
             type="number"
             name="totalPax"
+            style={{color:"#333"
+            }}
             value={formData.totalPax}
             onChange={handleChange}
             required

@@ -13,6 +13,36 @@ class Contactmap extends Component {
   render() {
     return (
       <div className="section-map pb-0">
+        
+
+        <div className="section section-padding">
+          <div className="container">
+            <div className="contact-info">
+              <div className="row">
+                <div className="col-xl-6">
+                  <div className="ct-info-box">
+                    <i className="flaticon-location" />
+                    <h5>Contact Us</h5>
+                    <span>OWL Cafe Dubai</span>
+                    <span>04 259 4647</span>
+                    <span> 055 52 559 6620 </span>
+                  </div>
+                </div>
+                <div className="col-xl-6">
+                  <div className="ct-info-box">
+                    <i className="flaticon-online-booking" />
+                    <h5>Opening Hours</h5>
+
+                    <span>
+                      <span>Daily:</span>  9:30 AM TO 3:00 AM
+                    </span>
+                    <a href="https://g.co/kgs/N9n8pBX"  style={{color: "#FFF"}}>Google Map</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="ct-contact-map-wrapper">
           <MapContainer
             className="markercluster-map ct-contact-map"
@@ -39,34 +69,6 @@ class Contactmap extends Component {
                         />*/}
             <Marker position={latlng} icon={customMarker}></Marker>
           </MapContainer>
-        </div>
-
-        <div className="section section-padding">
-          <div className="container">
-            <div className="contact-info">
-              <div className="row">
-                <div className="col-xl-6">
-                  <div className="ct-info-box">
-                    <i className="flaticon-location" />
-                    <h5>Find Us</h5>
-                    <span>OWL Cafe Dubai</span>
-                    <span>04 259 4647</span>
-                    <span> 055 52 559 6620 </span>
-                  </div>
-                </div>
-                <div className="col-xl-6">
-                  <div className="ct-info-box">
-                    <i className="flaticon-online-booking" />
-                    <h5>Opening Hours</h5>
-
-                    <span>
-                      <span>Daily:</span>  9:30 AM TO 3:00 AM
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     );

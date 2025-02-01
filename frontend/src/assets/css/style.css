@@ -3062,7 +3062,7 @@ table img{
   right: 20px;
   font-size: 80px;
   line-height: 1;
-  opacity: .2;
+  opacity: 1;
   z-index: -1;
 }
 .ct-info-box > span{
@@ -5346,7 +5346,11 @@ td.quantity{
   margin-bottom: 20px;
   width: 49% !important;
 }
-
+@media screen and (max-width: 1400px) {
+  .banner-logo1{
+    height: 500px !important;
+  }
+}
 @media screen and (max-width: 1000px) {
   .banner-card{
     width: 100% !important;
@@ -5358,7 +5362,7 @@ td.quantity{
 
 @media screen and (max-width: 500px) {
   .banner-logo1{
-    height: 300px !important;
+    height: 250px !important;
   }
   .banner-nav-item-inner img{
     width: 100px !important;

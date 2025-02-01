@@ -45,7 +45,7 @@
   
   .form-group input:focus {
     outline: none;
-    border-color: #ff7b54;
+    border-color: #FF00FF;
   }
   
   .submit-btn {
