@@ -9,7 +9,7 @@
             "mozarella": 120,
             "price": 50.0,
             "discount":"",
-            "img": "assets/img/offers/lunchOffers.png",
+            "img": "assets/1.png",
             "category": "AED 65 with shisha",
             "offer": true,
             "url":"/blogsingle/lunch-offer-at-owl-cafe-restaurant"
@@ -23,7 +23,7 @@
             "mozarella": 300,
             "price": 65.0,
             "discount":"",
-            "img": "assets/img/offers/karaok.jpg",
+            "img": "assets/2.png",
             "category": "AED 80 with shisha",
             "offer": true
                 },
@@ -36,7 +36,20 @@
             "mozarella": 100,
             "price": 45.0,
             "discount":"",
-            "img": "assets/img/offers/breakfast.png",
+            "img": "assets/3.png",
+            "category": "",
+            "offer": true
+        },
+        {
+            "id": 3,
+            "title": "Breakfast offer",
+            "subtitle": "Vegetarian Pizza With Thin Crust",
+            "shortdesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+            "calories": 230,
+            "mozarella": 100,
+            "price": 45.0,
+            "discount":"",
+            "img": "assets/4.png",
             "category": "",
             "offer": true
         }

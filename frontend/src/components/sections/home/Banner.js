@@ -109,7 +109,8 @@ class Banner extends Component {
                 <div className="banner-slider-nav">
                     <div className="container">
                         {/* Arrow */}
-                        <i className="slider-prev fas fa-arrow-left slick-arrow" onClick={this.previous} />
+                        <i class='slider-prev bx bx-chevron-left slick-arrow' onClick={this.previous}></i>
+                        {/* <i className="slider-prev fas fa-arrow-left slick-arrow" onClick={this.previous} /> */}
                         <Slider className="banner-slider-nav-inner" {...settingsthumb} asNavFor={this.state.nav1} ref={slider => (this.slider2 = slider)}>
                             {home.map((item, i) => (
                                 <a href={item.url}>
@@ -131,7 +132,7 @@ class Banner extends Component {
                             ))}
                         </Slider>
                         {/* Arrow */}
-                        <i className="slider-next fas fa-arrow-right slick-arrow" onClick={this.next} />
+                        <i className="slider-next bx bx-chevron-right slick-arrow" onClick={this.next} />
                     </div>
                 </div>
             </div>

@@ -257,3 +257,9 @@ color: #ED4E53;
 .btn-custom.secondary:hover {
   background-color: #555;
 }
+
+
+.slick-arrow{
+  color: #555 !important;
+  font-size: 40px;
+}
