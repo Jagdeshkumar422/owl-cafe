@@ -108,6 +108,7 @@ class Banner extends Component {
                 </Slider>*/}
                 <div className="banner-slider-nav">
                     <div className="container">
+                    <h1 className='title'>SPECIAL OFFERS</h1>
                         {/* Arrow */}
                         {/* <i class='slider-prev bx bx-chevron-left slick-arrow' onClick={this.previous}></i> */}
                         {/* <i className="slider-prev fas fa-arrow-left slick-arrow" onClick={this.previous} /> */}

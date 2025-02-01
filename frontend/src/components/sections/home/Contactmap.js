@@ -58,12 +58,10 @@ class Contactmap extends Component {
                   <div className="ct-info-box">
                     <i className="flaticon-online-booking" />
                     <h5>Opening Hours</h5>
-                    <span> ... </span>
 
                     <span>
                       <span>Daily:</span>  9:30 AM TO 3:00 AM
                     </span>
-                    <span> ... </span>
                   </div>
                 </div>
               </div>

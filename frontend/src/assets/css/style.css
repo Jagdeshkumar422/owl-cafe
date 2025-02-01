@@ -2159,11 +2159,12 @@ table img{
 }
 
 .banner .title{
-  font-size: 62px;
-  line-height: 80px;
-  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  line-height: 1.2;
 }
 .banner .subtitle{
   color: #848486;
@@ -3056,6 +3057,7 @@ table img{
 }
 .ct-info-box i{
   position: absolute;
+  color: #FF00FF;
   top: 20px;
   right: 20px;
   font-size: 80px;
