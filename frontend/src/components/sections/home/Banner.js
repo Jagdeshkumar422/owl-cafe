@@ -115,7 +115,7 @@ class Banner extends Component {
                         <div className='banner-cards'>
                             {home.map((item, i) => (
                                 // <a href={item.url}>
-                                <div key={i} className="banner-nav-item banner-card">
+                                <div key={i} className="banner-card">
                                     <div className="banner-nav-item-inner">
                                         {item.offer === true ? <div className="sale"> <div className="sale-inner"> Offer </div> </div> : <div className="sale"> <div className="sale-inner"> New </div> </div>}
                                         <img src={process.env.PUBLIC_URL + "/" + item.img} alt={item.title} />

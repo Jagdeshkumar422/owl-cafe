@@ -239,7 +239,7 @@ color: #ED4E53;
 
 
 .btn-custom.primary {
-  background-color: #ff7b54;
+  background-color: #FF00FF;
 }
 
 .btn-custom.secondary {
@@ -251,7 +251,7 @@ color: #ED4E53;
 }
 
 .btn-custom.primary:hover {
-  background-color: #e96e4b;
+  background-color: #FF00FF;
 }
 
 .btn-custom.secondary:hover {

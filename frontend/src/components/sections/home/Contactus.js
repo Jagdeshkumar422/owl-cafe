@@ -39,7 +39,7 @@ const Contactus = () => {
 
   return (
     <div className="contactus-container">
-      <h2 className="contactus-heading">Make a Booking</h2>
+      <h2 className="contactus-heading">Make a Reservation</h2>
       <form className="contactus-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Name:</label>

@@ -5342,3 +5342,22 @@ td.quantity{
   margin-bottom: 20px;
   width: 49% !important;
 }
+
+@media screen and (max-width: 1000px) {
+  .banner-card{
+    width: 100% !important;
+  }
+  .banner-logo1{
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner-logo1{
+    height: 300px !important;
+  }
+  .banner-nav-item-inner img{
+    width: 100px !important;
+    margin-right: 10px !important;
+  }
+}
