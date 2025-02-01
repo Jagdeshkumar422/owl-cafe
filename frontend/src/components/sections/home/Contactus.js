@@ -76,6 +76,8 @@ const Contactus = () => {
           <input
             type="datetime-local"
             name="dateTime"
+            style={{color:"#333"
+            }}
             value={formData.dateTime}
             onChange={handleChange}
             required
