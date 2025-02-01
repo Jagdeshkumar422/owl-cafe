@@ -30,6 +30,8 @@ class Contactmap extends Component {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
 
+            
+
             {/*<TileLayer
                             url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
                             attribution='&copy; Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
@@ -47,9 +49,9 @@ class Contactmap extends Component {
                   <div className="ct-info-box">
                     <i className="flaticon-location" />
                     <h5>Find Us</h5>
-                    <span>Dubai</span>
-                    <span>Al Garhood, Al Garhood View Building</span>
-                    <span> +971 04 259 4647 </span>
+                    <span>OWL Cafe Dubai</span>
+                    <span>04 259 4647</span>
+                    <span> 055 52 559 6620 </span>
                   </div>
                 </div>
                 <div className="col-xl-6">
@@ -59,10 +61,7 @@ class Contactmap extends Component {
                     <span> ... </span>
 
                     <span>
-                      <span>Tue - Sun:</span> 10:00 PM - 2:30 AM
-                    </span>
-                    <span>
-                      <span>Mon:</span> 10:00 PM - 2:30 AM
+                      <span>Daily:</span>  9:30 AM TO 3:00 AM
                     </span>
                     <span> ... </span>
                   </div>

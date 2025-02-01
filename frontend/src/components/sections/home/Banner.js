@@ -109,12 +109,13 @@ class Banner extends Component {
                 <div className="banner-slider-nav">
                     <div className="container">
                         {/* Arrow */}
-                        <i class='slider-prev bx bx-chevron-left slick-arrow' onClick={this.previous}></i>
+                        {/* <i class='slider-prev bx bx-chevron-left slick-arrow' onClick={this.previous}></i> */}
                         {/* <i className="slider-prev fas fa-arrow-left slick-arrow" onClick={this.previous} /> */}
-                        <Slider className="banner-slider-nav-inner" {...settingsthumb} asNavFor={this.state.nav1} ref={slider => (this.slider2 = slider)}>
+                        {/* <Slider className="banner-slider-nav-inner" {...settingsthumb} asNavFor={this.state.nav1} ref={slider => (this.slider2 = slider)}> */}
+                        <div className='banner-cards'>
                             {home.map((item, i) => (
-                                <a href={item.url}>
-                                <div key={i} className="banner-nav-item">
+                                // <a href={item.url}>
+                                <div key={i} className="banner-nav-item banner-card">
                                     <div className="banner-nav-item-inner">
                                         {item.offer === true ? <div className="sale"> <div className="sale-inner"> Offer </div> </div> : <div className="sale"> <div className="sale-inner"> New </div> </div>}
                                         <img src={process.env.PUBLIC_URL + "/" + item.img} alt={item.title} />
@@ -123,16 +124,18 @@ class Banner extends Component {
                                             {
                                                 item.discount > 0 || item.discount !== '' ? <span>{new Intl.NumberFormat().format((item.price * (100 - item.discount) / 100).toFixed(2))}AED</span> : ''
                                             }
-                                            <span>AED {new Intl.NumberFormat().format((item.price).toFixed(2))}</span>
-                                            <h5><span>{item.category}</span></h5>
+                                            {/* <span>AED {new Intl.NumberFormat().format((item.price).toFixed(2))}</span> */}
+                                            <span>{item.offerreq}</span>
+                                            <h5><span style={{color: "#ED4E53", fontSize: "11px", }}>{item.subtitle}</span></h5>
                                         </div>
                                     </div>
                                 </div>
-                                </a>
+                                // </a>
                             ))}
-                        </Slider>
+                            </div>
+                        {/* </Slider> */}
                         {/* Arrow */}
-                        <i className="slider-next bx bx-chevron-right slick-arrow" onClick={this.next} />
+                        {/* <i className="slider-next bx bx-chevron-right slick-arrow" onClick={this.next} /> */}
                     </div>
                 </div>
             </div>

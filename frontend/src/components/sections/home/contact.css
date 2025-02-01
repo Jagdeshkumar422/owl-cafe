@@ -3,7 +3,7 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
@@ -12,7 +12,7 @@
   .contactus-heading {
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: #fff;
     margin-bottom: 30px;
     font-weight: bold;
   }
@@ -30,22 +30,22 @@
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #333;
+    color: #fff;
   }
   
   .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     border-radius: 4px;
     font-size: 1rem;
-    color: #333;
+    color: #fff;
     transition: all 0.3s ease;
   }
   
   .form-group input:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #ff7b54;
   }
   
   .submit-btn {
@@ -73,7 +73,7 @@
   }
   
   .btn-custom.secondary {
-    background-color: #333;
+    background-color: #000;
   }
   
   .btn-custom:hover {
@@ -85,7 +85,7 @@
   }
   
   .btn-custom.secondary:hover {
-    background-color: #555;
+    background-color: #000;
   }
   
   

@@ -8,7 +8,7 @@ class Aboutus extends Component {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 mb-lg-30 ct-single-img-wrapper">
-                            <img src={process.env.PUBLIC_URL + "/assets/img/about.jpg"} alt="OWL Cafe & Restaurant Interior" />
+                            <img src={process.env.PUBLIC_URL + "/assets/Food Photo.jpg"} alt="OWL Cafe & Restaurant Interior" />
                         </div>
                         <div className="col-lg-6">
                             <div className="section-title-wrap mr-lg-30">

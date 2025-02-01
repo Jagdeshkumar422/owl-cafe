@@ -4495,7 +4495,7 @@ td.quantity{
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: center;
 }
 .menu-v2 .product .favorite{
   margin-left: 0;
@@ -5331,3 +5331,14 @@ td.quantity{
 }
 
 
+.banner-cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner-card{
+  margin-bottom: 20px;
+  width: 49% !important;
+}
