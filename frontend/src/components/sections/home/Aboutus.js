@@ -29,7 +29,7 @@ class Aboutus extends Component {
                                 <p className="subtitle">
                                     Since opening our doors, we’ve been dedicated to creating a warm and inviting atmosphere where families can gather for a meal, celebrate special occasions, or simply enjoy a day out. Whether you're seeking a leisurely lunch, a delightful dinner, or an evening filled with entertainment and shisha, OWL Cafe & Restaurant is your family's home away from home.
                                 </p>
-                                <Link to="/menu-v1" className="btn-custom">Explore Our Menu</Link>
+                                <Link to="/menu-v1" className="btn-custom primary">Explore Our Menu</Link>
                                 
                                 
                             </div>

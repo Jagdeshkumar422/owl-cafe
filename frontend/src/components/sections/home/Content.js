@@ -12,6 +12,7 @@ import Contactmap from "./Contactmap";
 //import Products from "./Products";
 //import Testimonials from "./Testimonials";
 import { Link as ScrollLink, Element } from "react-scroll";
+import Contactus from "./Contactus";
 <style>
   
 </style>
@@ -41,6 +42,7 @@ class Content extends Component {
         <Element name="aboutus">
           <Aboutus />
         </Element>
+        <Contactus/>
         <Contactmap />
         {/*<Categories />*/}
         {/*<div className="section products-section">

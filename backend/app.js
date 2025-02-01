@@ -21,6 +21,7 @@ app.use(cors({
 app.use('/api', bannerRoute);
 app.use('/api', require("./routes/categoryRoute"));
 app.use('/api', require("./routes/menuRoute"));
+app.use('/api', require("./routes/sendEmail"));
 
 // Connect to MongoDB (replace with your own URI)
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })

@@ -236,3 +236,24 @@ background-color: #fff;
 .accordion .card .collapseparent.show+.card-header .nav-link i{
 color: #ED4E53;
 }
+
+
+.btn-custom.primary {
+  background-color: #ff7b54;
+}
+
+.btn-custom.secondary {
+  background-color: #333;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+
+.btn-custom.primary:hover {
+  background-color: #e96e4b;
+}
+
+.btn-custom.secondary:hover {
+  background-color: #555;
+}

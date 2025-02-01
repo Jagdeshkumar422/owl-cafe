@@ -1,0 +1,101 @@
+/* Basic Styling */
+.contactus-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contactus-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .contactus-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .submit-btn {
+    background-color: #ff7b54;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #555;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .btn-custom.primary {
+    background-color: #ff7b54;
+  }
+  
+  .btn-custom.secondary {
+    background-color: #333;
+  }
+  
+  .btn-custom:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-custom.primary:hover {
+    background-color: #e96e4b;
+  }
+  
+  .btn-custom.secondary:hover {
+    background-color: #555;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .contactus-container {
+      padding: 15px;
+    }
+  
+    .contactus-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
