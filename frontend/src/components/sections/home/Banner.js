@@ -126,7 +126,7 @@ class Banner extends Component {
                                             }
                                             {/* <span>AED {new Intl.NumberFormat().format((item.price).toFixed(2))}</span> */}
                                             <span>{item.offerreq}</span>
-                                            <h5><span style={{color: "#ED4E53", fontSize: "11px", }}>{item.subtitle}</span></h5>
+                                            <h5><span style={{color: "#FF00FF", fontSize: "11px", }}>{item.subtitle}</span></h5>
                                         </div>
                                     </div>
                                 </div>

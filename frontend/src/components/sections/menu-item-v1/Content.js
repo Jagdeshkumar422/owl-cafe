@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Tab, Nav } from "react-bootstrap";
 import { APP_CONFIG } from '../../../config';
+import { withRouter } from 'react-router-dom';  // Import withRouter to get history
+import Footer from '../home/Footer';
 
 class Content extends Component {
   constructor(props) {
@@ -38,6 +40,11 @@ class Content extends Component {
     }
   };
 
+  // Back button click handler
+  handleBackClick = () => {
+    this.props.history.goBack(); // This will go back to the previous page
+  };
+
   render() {
     const { product, loading, error } = this.state;
 
@@ -55,17 +62,29 @@ class Content extends Component {
       <Fragment>
         <div style={{
           backgroundColor: "#000",
-          // backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/banner/background_with_layer_2.png)`,
           justifyContent: "flex-start",
           alignItems: "center",
         }}>
           <div className="section product-single1" style={{ padding: "2%" }}>
             <div className="container" style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+                  {/* Back Button */}
+                  <button onClick={this.handleBackClick} style={{
+                    marginBottom: "20px", 
+                    padding: "10px 20px", 
+                    backgroundColor: "#000", 
+                    color: "#FF00FF", 
+                    border: "none", 
+                    cursor: "pointer",
+                    fontSize: "40px"
+                  }}>
+                    <i class='bx bx-left-arrow-alt'></i>
+                  </button>
               <div className="row" style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
                 <div className="col-sm-8" style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+
                   {/* Main Thumb */}
                   <div className="product-thumb1" style={{ flex: 1, justifyContent: "center", alignItems: "center", width: "100%" }}>
-                    <img src={product.img} alt={product.name} style={{width: "100%"}} />
+                    <img src={product.img} alt={product.name} style={{ width: "100%" }} />
                   </div>
                   {/* /Main Thumb */}
                 </div>
@@ -79,7 +98,7 @@ class Content extends Component {
                 <Tab.Container defaultActiveKey="tab1">
                   <Tab.Content>
                     <Tab.Pane eventKey="tab1" style={{ padding: "2%", backgroundColor: "#C0C0C0" }}>
-                      <h4>{product.name}</h4>
+                      <h4 style={{color: "#000"}}>{product.name}</h4>
                       <div style={{ color: "#000" }} dangerouslySetInnerHTML={{ __html: product.longdescription || product.shortdesc }} />
                     </Tab.Pane>
                   </Tab.Content>
@@ -94,4 +113,5 @@ class Content extends Component {
   }
 }
 
-export default Content;
+// Wrap the component with withRouter to get access to the history prop
+export default withRouter(Content);

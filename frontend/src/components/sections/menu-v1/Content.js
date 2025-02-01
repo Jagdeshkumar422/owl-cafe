@@ -6,6 +6,7 @@ import Quickview from "../../layouts/Quickview";
 import Masonry from "react-masonry-component";
 import axios from "axios";
 import { APP_CONFIG } from "../../../config";
+import Footer from "../home/Footer";
 
 class Content extends Component {
   constructor(props) {
@@ -130,7 +131,7 @@ class Content extends Component {
         <div
           className="ct-menu-categories menu-filter"
           style={{
-            backgroundColor: "#000"
+            backgroundColor: "#000",
             // backgroundImage:
             //   "url(" +
             //   process.env.PUBLIC_URL +
@@ -191,6 +192,7 @@ class Content extends Component {
           className="section section-padding"
           style={{
             backgroundColor: "#000",
+            minHeight: "100vh",
             padding: 10,
             // backgroundImage:
             //   "url(" +
@@ -220,6 +222,7 @@ class Content extends Component {
           <Quickview productId={this.state.lastActiveBox} />
         </Modal>
         {/* Menu Wrapper End */}
+        <Footer/>
       </Fragment>
     );
   }
