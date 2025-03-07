@@ -20,7 +20,7 @@ router.post("/booking", async (req, res) => {
   // Email content for booking notification
   const mailOptions = {
     from: email, // The user's email is set as the "from" field
-    to: "muazraja@gmail.com", // All bookings will be sent to this email address
+    to: "jagdeshk953@gmail.com", // All bookings will be sent to this email address
     subject: "New Booking Request", // Email subject
     text: `
       You have received a new booking request:
