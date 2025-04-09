@@ -76,10 +76,7 @@ class BannerImage extends Component {
                             alt="Logo"
                             className="banner-logo1" // Apply the CSS class here
 
-                           style={{
-                                height: '700px', // 80% of the parent div's height
-                                width: '100%' // Width will adjust based on the image's aspect ratio
-                            }}
+
                         />
                          ):  error ? (
                             <p style={{ color: "red" }}>{error}</p> // Display error if fetching fails

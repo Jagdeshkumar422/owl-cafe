@@ -126,7 +126,8 @@ class Banner extends Component {
                                                 item.discount > 0 || item.discount !== '' ? <span>{new Intl.NumberFormat().format((item.price * (100 - item.discount) / 100).toFixed(2))}AED</span> : ''
                                             }
                                             {/* <span>AED {new Intl.NumberFormat().format((item.price).toFixed(2))}</span> */}
-                                            <span>{item.offerreq}</span>
+                                            <span>{item.offerreq} <br/> {item.offerreq2}</span>
+                                            {/* <span>{item?.offerreq2}</span> */}
                                             <h5><span style={{color: "#FF00FF", fontSize: "11px", }}>{item.subtitle}</span></h5>
                                         </div>
                                     </div>

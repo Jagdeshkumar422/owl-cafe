@@ -5346,6 +5346,11 @@ td.quantity{
   margin-bottom: 20px;
   width: 49% !important;
 }
+
+.banner-logo1{
+  width: 100%;
+  height: 700px;
+}
 @media screen and (max-width: 1400px) {
   .banner-logo1{
     height: 500px !important;
